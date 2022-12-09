@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-rows: 10rem 1fr 1fr;
+    font-size: 16px;
+    background: url(images/homepage-banner.jpg) top center no-repeat;
+    
+
+}
+header{
+    
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1.5fr 1fr 2fr;
+    gap: 1rem;
+
+
+}
+main > .intro{
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    
+}
+main > .cinsiyet{
+    
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 5rem;
+    min-height: 30rem;
+    height: auto;
+    margin: 2rem;
+    font-family: 'Anton', sans-serif;
+    
+   
+
+}
+main > .cinsiyet > img{
+    width: 50%;
+    border: 3px solid red;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+main > .cinsiyet > a{
+    display: block;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(166, 68, 68);
+    color: white;
+    font-size: large;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+main > section:nth-child(2){
+    grid-column: 1/3;
+    align-items: flex-end;
+    justify-content: flex-start;
+    
+}
+main > section:nth-child(3){
+    grid-column: 3/5;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+main > .kutu{
+    background-color: rgb(254, 249, 249);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5rem;
+    min-height: 60rem;
+    height: auto;
+    margin: 2rem;
+    font-family: 'Anton', sans-serif;
+    opacity: 0.9;
+   
+
+}
+main > section:nth-child(4):hover{
+    background-color: #989898;
+}
+main > section:nth-child(5):hover{
+    background-color: #F2CD90;
+}
+main > section:nth-child(6):hover{
+    background-color: #D37576;
+}
+main > section:nth-child(7):hover{
+    background-color: #77A04C;
+}
+.kutu > img{
+    width: 80%;
+
+    
+}
+.kutu > ul {
+   list-style: none;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(249, 244, 244);
+    font-size: 20px;
+    text-transform: uppercase;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 4fr 1fr;
+}
+footer > h3{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+footer > section:nth-child(1){
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+footer > section:nth-child(1){
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+
+/*header bölümü*/
+
+header > nav {
+    flex: 1 1 70%;
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    margin-left: 20rem;
+}
+header > img{
+    flex: 0 1 300px;
+    height: 100%;
+
+}
+header > nav > ul {
+    
+    display: flex;
+    list-style: none;
+  
+    gap: 10rem;
+    text-transform: uppercase;
+}
+header > nav > ul li {
+    margin: 1rem;
+}
+header > nav > ul li a{
+    display: block;
+    
+    
+
+}
+a{
+ border-left:2px;
+ color: aliceblue;
+ 
+ 
+}
+section  {
+    padding-left: 200px;
+}
+.protein{
+height: 400px;
+background-color: #D37576;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+    
+   
+        
+
+
+
+
+
+
+ 
+
+
